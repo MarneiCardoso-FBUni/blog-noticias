@@ -50,6 +50,18 @@ nav {
     }
 }
 
+.menu-hamburguer {
+    display: none;
+
+    span {
+        display: block;
+        width: 2rem;
+        height: 0.25rem;
+        background-color: #ffffff;
+        margin: 0.25rem 0;
+    };
+}
+
 /* Banner */
 header {
     background-image: url("https://cdn.pixabay.com/photo/2016/02/01/00/56/news-1172463_1280.jpg");
@@ -110,4 +122,109 @@ footer {
     width: 100%;
 }
 
-/* Media Queries */
+/* Responsividade - Media Queries */
+
+/* Celular retrato (portrait) */
+@media (max-width: 576px) {
+    nav {
+        background-color: #8fb6ff;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    main {
+        padding: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    article {
+        flex-direction: column;
+        height: auto;
+        
+        img {
+            width: 100%;
+            border-radius: 0.25rem;
+        }
+    }
+}
+
+/* Celular paisagem (landscape) */
+@media (min-width: 576px) {
+    nav {
+        background-color: #f3e138;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    main {
+        padding: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    article {
+        flex-direction: column;
+        height: auto;
+        
+        img {
+            width: 100%;
+            border-radius: 0.25rem;
+        }
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    nav {
+        background-color: #8cf338;
+    }
+}
+
+/* Notebook */
+@media (min-width: 992px) {
+    nav {
+        background-color: #ff5f69;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    main {
+        padding: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    article {
+        flex-direction: row;
+        height: 16rem;
+        
+        img {
+            height: 100%;
+            width: 20rem;
+            border-radius: 0.25rem;
+        }
+    }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+    nav {
+        background-color: #686a73;
+    }
+}
