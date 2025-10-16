@@ -126,10 +126,6 @@ footer {
 
 /* Celular retrato (portrait) */
 @media (max-width: 576px) {
-    nav {
-        background-color: #8fb6ff;
-    }
-
     .menu-hamburguer {
         display: block;
     }
@@ -156,10 +152,6 @@ footer {
 
 /* Celular paisagem (landscape) */
 @media (min-width: 576px) {
-    nav {
-        background-color: #f3e138;
-    }
-
     .menu-hamburguer {
         display: block;
     }
@@ -184,19 +176,8 @@ footer {
     }
 }
 
-/* Tablet */
-@media (min-width: 768px) {
-    nav {
-        background-color: #8cf338;
-    }
-}
-
 /* Notebook */
 @media (min-width: 992px) {
-    nav {
-        background-color: #ff5f69;
-    }
-
     .menu-hamburguer {
         display: none;
     }
@@ -219,12 +200,5 @@ footer {
             width: 20rem;
             border-radius: 0.25rem;
         }
-    }
-}
-
-/* Desktop */
-@media (min-width: 1280px) {
-    nav {
-        background-color: #686a73;
     }
 }
